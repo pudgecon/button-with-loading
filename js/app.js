@@ -9,14 +9,12 @@ App.IndexRoute = Ember.Route.extend({
     save: function(resolve, reject) {
       Ember.run.later(this, function() {
         resolve();
-      }, 2000);
+      }, 3000);
     }
   }
 });
 
 App.ButtonWithLoadingComponent = Ember.Component.extend({
-  tagName: 'button',
-
   classNameBindings: 'disabled:disabled',
   disabled: false,
 
